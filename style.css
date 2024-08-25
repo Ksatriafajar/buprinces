@@ -1,0 +1,140 @@
+/* Root element setup */
+html {
+  font-size: 100%; /* Base font size */
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+/* Main container */
+.desktop-1 {
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  padding: 51px 71.5px 248px 102px;
+  max-width: 100vw; /* Prevents content from exceeding the viewport width */
+  max-height: 100vh; /* Prevents content from exceeding the viewport height */
+  box-sizing: border-box;
+  position: relative; /* Set relative positioning for layering */
+}
+
+/* Text elements */
+.desktop-1 .home, .desktop-1 .about, .desktop-1 .gallery, .desktop-1 .contact {
+  overflow-wrap: break-word;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 2.5vw; /* Use viewport width to keep size proportional */
+  color: #FFFFFF;
+  flex-shrink: 0; /* Prevents shrinking */
+  position: relative; /* Set relative positioning */
+  z-index: 2; /* Higher z-index to layer above the image */
+}
+
+.desktop-1 .read-more {
+  overflow-wrap: break-word;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.7vw; /* Use viewport width to keep size proportional */
+  color: #45A4AA;
+  text-align: center;
+  flex-shrink: 0; /* Prevents shrinking */
+}
+
+.desktop-1 .wonderful-island {
+  margin: 30px 38px; /* Space around the title */
+  overflow-wrap: break-word;
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  font-size: 6.5vw; /* Reduced font size */
+  color: #FFFFFF;
+  flex-shrink: 0; /* Prevents shrinking */
+  position: relative; /* Set relative positioning */
+  z-index: 2; /* Higher z-index to layer above the image */
+  line-height: 1.1; /* Adjust line height for better spacing between lines */
+  text-transform: uppercase; /* Make the text uppercase */
+  white-space: pre-line; /* Ensure the text respects line breaks */
+}
+
+.nature-description {
+  position: relative;
+  margin: 30px 38px 38px 38px; /* Lowering the paragraph */
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 2.2vw; /* Use viewport width to keep size proportional */
+  color: #FFFFFF;
+  flex-shrink: 0; /* Prevents shrinking */
+  z-index: 2; /* Higher z-index to layer above the image */
+}
+
+/* Image and positioning */
+.desktop-1 .image {
+  background: url('./asset/gambar/image.png') 50% / cover no-repeat;
+  position: absolute;
+  top: -36px;
+  right: -113px;
+  width: 114vw; /* Extend slightly beyond the viewport width */
+  height: 76vw; /* Use viewport width to maintain proportion */
+  max-width: 1644px;
+  max-height: 1096px;
+  z-index: 1; /* Lower z-index to place behind text and button */
+}
+
+.desktop-1 .explore-earth {
+  margin-right: 22px;
+  width: 16vw; /* Use viewport width to keep size proportional */
+  overflow-wrap: break-word;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 2.5vw; /* Use viewport width to keep size proportional */
+  color: #FFFFFF;
+  flex-shrink: 0; /* Prevents shrinking */
+  position: relative; /* Set relative positioning */
+  z-index: 2; /* Higher z-index to layer above the image */
+}
+
+/* Container for "Read More" button */
+.desktop-1 .container {
+  background: #FFFFFF;
+  position: relative;
+  margin: 10px 38px 0 38px; /* Reduced margin-top to bring it closer */
+  display: flex;
+  align-self: flex-start;
+  padding: 26px 0;
+  width: 18.75vw; /* Use viewport width to keep size proportional */
+  box-sizing: border-box;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;  /* Center vertically */
+  flex-shrink: 0; /* Prevents shrinking */
+  z-index: 3; /* Increased z-index to ensure it is above the image */
+}
+
+/* Container for the menu */
+.desktop-1 .container-1 {
+  position: relative;
+  margin-bottom: 12vw; /* Use viewport width to keep size proportional */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 88vw; /* Use viewport width to keep size proportional */
+  box-sizing: border-box;
+  flex-shrink: 0; /* Prevents shrinking */
+  z-index: 2; /* Higher z-index to layer above the image */
+}
+
+.desktop-1 .home, 
+.desktop-1 .about, 
+.desktop-1 .gallery,
+.desktop-1 .contact {
+  margin-right: 1vw; /* Increase the spacing between these items */
+}
