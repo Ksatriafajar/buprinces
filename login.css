@@ -1,0 +1,80 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Login form container */
+#loginForm {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+    width: 350px;
+}
+
+/* Heading style */
+#loginForm h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Input fields styling */
+#loginForm input[type="text"], 
+#loginForm input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+/* Submit button styling */
+#loginForm input[type="submit"] {
+    background: #ff7e5f;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+/* Submit button hover effect */
+#loginForm input[type="submit"]:hover {
+    background: #feb47b;
+    transform: scale(1.05);
+}
+
+/* Error message styling */
+#error {
+    color: red;
+    margin-top: 10px;
+    display: none;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Additional styles */
+#loginForm input[type="text"]::placeholder, 
+#loginForm input[type="password"]::placeholder {
+    color: #aaa;
+    font-size: 14px;
+}
+
+#loginForm input[type="submit"]:active {
+    transform: scale(0.98);
+}
+
